@@ -1,0 +1,33 @@
+<header class="fixed top-0 left-0 w-full bg-[#1F4E4E]/90 backdrop-blur-md z-50">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+    <!-- Logo -->
+    <img src="/assets/SOLAR (11).png" class="h-10" alt="HUSK Logo">
+
+    <!-- Hamburger button (mobile) -->
+    <button id="menu-btn" class="md:hidden flex flex-col justify-between h-6 w-6 focus:outline-none">
+      <span class="block h-0.5 w-full bg-white"></span>
+      <span class="block h-0.5 w-full bg-white"></span>
+      <span class="block h-0.5 w-full bg-white"></span>
+    </button>
+
+    <!-- Navigation -->
+    <nav id="nav-menu" class="hidden md:flex items-center space-x-6 text-white font-medium">
+      <a href="#banner" class="hover:text-[#E27F26] transition">Nội dung hội thảo</a>
+      <a href="#heroVideo" class="hover:text-[#E27F26] transition">Về Husk Việt Nam</a>
+      <a href="#solution" class="hover:text-[#E27F26] transition">Giải pháp</a>
+      <a href="#register" class="px-4 py-2 bg-[#E27F26] hover:bg-[#AEB63C] rounded-lg">
+        Đăng ký hội thảo
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- Script cho hamburger -->
+<script>
+const btn = document.getElementById('menu-btn');
+const nav = document.getElementById('nav-menu');
+
+btn.addEventListener('click', () => {
+  nav.classList.toggle('hidden');
+});
+</script>
